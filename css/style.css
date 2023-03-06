@@ -216,8 +216,8 @@ form [type="text"], form [type="password"] {
         line-height: 24px;
         margin-left: auto;
         margin-right: auto;
-        height: 40px; /*Definir os tamanhos dos inputs*/
-        width: 150px;
+        height: 25px; /*Definir os tamanhos dos inputs*/
+        width: 100px;
         margin-top: 10px;
     }
 
