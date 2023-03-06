@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Brasão-UNCISAL-transparente.png">
+    <link rel="stylesheet" type="text/css" href="style-declaracao.css"> 
+    <title>Pedido de Declaração</title>
+</head>
+<body>
+    
+     <header>
+        <div class="logo">
+            <img src="Uncisal-logo.png" alt="Brasão UNCISAL">
+        </div>
+    </header>
+    
+    <div class="principal">
+        <main>
+            <div class="container">
+                <h1>Pedido de Declaração</h1>
+                <label for="curso">
+                    <span>Curso</span>
+                    <select name="Curso" id="curso">
+                        <option selected value="c0"> Selecione o curso</option>
+                        <option value="c1">CURSO SUPERIOR DE TECNOLOGIA EM SISTEMAS PARA INTERNET</option>
+                    </select>
+                </label>
+                <label for="periodo">
+                    <span>Período</span>
+                    <select name="Período" id="periodo">
+                        <option selected value="p0"> Selecione o período</option>
+                        <option value="p1">1° Período</option>
+                        <option value="p2">2° Período</option>
+                    </select>
+                </label>
+                <label for="coordenador">
+                    <span>Coordenador(a)</span>
+                    <select name="Coordenador" id="coordenador">
+                        <option selected value="10">Selecione o(a) Coordenador(a)</option>
+                        <option value="1">ADRIANA DE MEDEIROS MELO</option>
+                        <option value="2">ALBERTO MONTEIRO PEIXOTO</option>
+                        <option value="3">ALESSANDRO DE MELO OMENA</option>
+                        <option value="4">ALINE DE ARAÚJO MARQUES</option>
+                        <option value="5">ALEXSANDRA DE SOUZA PEDROSA</option>
+                        <option value="6">DENISE CRISTINA DE LIMA BARBOSA ARAÚJO</option>
+                        <option value="7">PAULO HENRIQUE GOMES SILVA</option>
+                        <option value="8">RAFAEL ANDRÉ DE BARROS</option>
+                        <option value="9">LILIANE CORREIA TOSCANO DE BRITO DIZEU</option>
+                    </select>
+                </label>
+                
+                <label for="data">
+                    <span>Data da emissão</span>
+                    <input type="date">
+                </label>
+
+                <div class="botoes">
+                    <button onclick="window.history.back()">Voltar</button>
+                    <button onclick="window.print()">Imprimir 🖨️</button>
+                </div>
+    
+            </div>
+        </main>    
+    </div>
+    
+</body>
+</html> 

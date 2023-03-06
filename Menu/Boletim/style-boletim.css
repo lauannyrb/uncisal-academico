@@ -1,0 +1,187 @@
+/*  ------------------ Parte superior ------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Inter";
+}
+
+body{
+    background-color: #FFFFFF;
+    min-height: 100vh; /*Altura mínima da página*/
+    min-width: 10vw; /*Largura minima*/
+}
+
+header{
+    background-color: #246644;
+    width: 100%;
+    height: 20vh;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+}
+
+.logo img{
+    width: 40vh;
+} 
+
+
+/*  ------------------ Informações do aluno ------------------ */
+.aluno_dados {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.25em;
+    border-radius: 20px;
+    /* border-top-left-radius: 20px;  (Só podia ser o xonas né vey, colocar 4 linhas de código pra fazer a mesma coisa)
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px; */
+    overflow: hidden;
+    
+  }
+  
+.aluno_dados th, .aluno_dados td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+  
+.aluno_dados tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+.aluno_dados th {
+    background-color: #246644;
+    color: white;
+  }
+
+
+@media only screen and (max-width: 750px)  {
+  .aluno_dados {
+    font-size: 1em;
+  }
+  
+}
+  @media only screen and (max-width: 530px)  {
+    
+    .aluno_dados {
+      margin: 3px auto;
+      font-size: 0.8em;
+      border-radius: 10px;
+      overflow: hidden;
+      
+    }
+    
+  .aluno_dados th, .aluno_dados td {
+      padding: 3px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+
+}
+
+@media only screen and (max-width: 430px) {
+  .aluno_dados {
+    font-size: 0.6em;
+  }
+}
+
+/*  ------------------ boletim css ------------------ */
+.boletim {
+  
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    font-size: 1.25em;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+.boletim th,.boletim td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .boletim tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+.boletim th {
+    background-color: #246644;
+    color: white;
+  }
+
+@media only screen and (max-width: 900px) {
+  .boletim {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1em;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+.boletim th,.boletim td {
+    padding: 2px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+  .boletim {
+    margin: 20px auto;
+    font-size: 0.6em;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+}
+
+/*  ------------------ div principal com tudo ------------------ */
+.parte_principal{
+    padding: 20px;  
+    
+}
+
+/*  ------------------ botoes ------------------ */
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #555;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+@media only screen and (max-width: 530px) {
+
+  button {
+    padding: 6px 11px;
+    font-size: 1em;
+    margin: 0 10px;
+  }
+}

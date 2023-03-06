@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Inter";
+}
+
+body{
+    background-color: #FFFFFF;
+    min-height: 100vh; /*Altura mínima da página*/
+    min-width: 10vw; /*Largura minima*/
+}
+
+
+header{
+    background-color: #246644;
+    width: 100vw;
+    height: 20vh;
+}
+
+
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20vh;
+}
+
+.logo img{
+    width: 40vh;
+} 
+
+/* ------------------------- Área principal ------------------------- */
+
+main{
+    height: 80vh;
+    background-color:#FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #246644;
+    height: 55vh;
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 25px;
+    color: #FFFFFF;
+}
+
+.container h1{
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.container label{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+span{
+    padding-bottom: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+select{
+    border-radius: 5px;
+    height: 30px;
+    font-weight: bolder;
+    border: none;
+    cursor:pointer;
+
+}
+
+input{
+    border-radius: 5px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+  
+button {
+    padding: 5px 10px;
+    font-size: 1em;
+    margin: 0 10px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #b4b1b1;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+@media only screen and (max-width: 900px) {
+    select{
+        width: 50vw;
+    }
+
+    .container h1{
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 5px
+    }
+
+}
